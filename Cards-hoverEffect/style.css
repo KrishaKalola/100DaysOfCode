@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   min-height: 100vh;
+   background-color: thistle;
+   display: flex;
+   justify-content: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.card1{
+    height: 480px;
+    width: 18%;
+    background-color: palegoldenrod;
+    float: left;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+.card2{
+    height: 480px;
+    width: 18%;
+    background-color: rgb(228, 203, 170);
+    float: left;
+    margin: 20px;
+    margin-top: 140px;
+    border-radius: 20px;
+    
+}
+.card3{
+    height: 480px;
+    width: 18%;
+    background-color: rgb(102, 207, 233);
+    float: left;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+.card4{
+    height: 480px;
+    width: 18%;
+    background-color: rgb(127, 255, 212);
+    float: left;
+    margin: 10px;
+    margin-top: 140px;
+    border-radius: 20px;
+    
+}
+.img1{
+    height: 35%;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background-image: url(./2.jpg);
+    background-size: cover;
+}
+.img2{
+    height: 35%;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background-image: url(./1.jpg);
+    background-size: cover;
+}
+.img3{
+    height: 35%;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background-image: url(./3.jpg);
+    background-size: cover;
+}
+.img4{
+    height: 35%;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background-image: url(./4.jpg);
+    background-size: cover;
+}
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img{
+    position: relative;
+    top: 70%;
+    left: 5%;
+}
+
+.text{
+    height: 65%;
+    width: 100%;
+    padding: 10px;
+}
+.grey{
+    color: grey;
+    font-size: 12px;
+    text-justify: auto;
+    float: right;
+}
+.timing{
+}
+.xyz{
+    float: left;
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: ;
+    padding-top: 10px;
+}
+.timing .grey{
+    color: grey;
+    font-size: 12px;
+    text-justify: auto;
+    float: right;
+    text-align: right;
+    height: 30px;
+}
+.cards:hover .card1,
+.cards:hover .card2,
+.cards:hover .card3,
+.cards:hover .card4{
+margin-top: 100px;
+}
