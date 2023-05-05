@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(62, 101, 145);
+}
+.card{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    border: 5px solid black;
+}
+.card:hover{
+    height: 480px;
+}
+.card:hover .content .details{
+   transform: translateY(0px);
+}
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: rgb(152, 183, 218);
+    border: 5px solid black;
+    border-radius: 20px;
+    
+    overflow: hidden;
+    transition: 0.5s;
+}
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover .imgBx{
+    width: 250px;
+    height: 250px;
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(180px);
+}
+.card .content .details h2{
+    margin-top: 30px;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: black;
+    line-height: 1.2em;
+
+}
+.card .content .details h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.card .content .details .icon{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 0;
+}
+.card .content .details .icon .iconImg{
+    height: 50px;
+    width: 60px;
+    color: black;
+}
+.card .content .details .icon .iconImg span{
+    font-size: 1em;
+    font-weight: 450;
+    opacity: 0.75;
+}
+
+.card .content .details .icon .iconImg i{
+    font-size: 35px;
+  line-height: 50px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  color: black;
+}
+.card .content .details .icon .iconImg i:hover{
+     position: relative;
+     top: -10px;
+     transition: 0.5s;
+}
+.card .content .data{
+    font-size: 0.85em;
+    font-weight: 200;
+    margin: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
