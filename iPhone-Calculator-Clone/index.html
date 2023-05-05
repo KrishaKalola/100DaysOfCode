@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="calculator">
+<div class="border">
+    <div class="screen">
+    
+    <div class="value" ><input type="text" id="mycalc">
+    </div>
+    <table>
+    <tr>
+        <td><button id="clr" class="btn special" onclick="clr()">AC</button></td>
+        <td><button id="mybtn" class="btn special" onclick="dis('+/-')">+/-</button></td>
+        <td><button id="mybtn" class="btn special" onclick="dis('%')">%</button></td>
+        <td><button id="mybtn" class="btn operator" onclick="dis('/')">/</button></td>
+    </tr>
+    <tr>
+        <td><button id="mybtn" class="btn number" onclick="dis(7)">7</button></td>
+        <td><button id="mybtn" class="btn number" onclick="dis(8)">8</button></td>
+        <td><button id="mybtn" class="btn number" onclick="dis(9)">9</button></td>
+        <td><button id="mybtn" class="btn operator" onclick="dis('*')">X</button></td>
+    </tr>
+    <tr>
+        <td><button id="mybtn" class="btn number" onclick="dis(4)">4</button></td>
+        <td><button id="mybtn" class="btn number" onclick="dis(5)">5</button></td>
+        <td><button id="mybtn" class="btn number" onclick="dis(6)">6</button></td>
+        <td><button id="mybtn" class="btn operator" onclick="dis('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button id="mybtn" class="btn number" onclick="dis(1)">1</button></td>
+        <td><button id="mybtn" class="btn number" onclick="dis(2)">2</button></td>
+        <td><button id="mybtn" class="btn number" onclick="dis(3)">3</button></td>
+        <td><button id="mybtn" class="btn operator" onclick="dis('+')">+</button></td>
+    </tr>
+    <tr>
+        <td colspan="2"><button id="mybtn"  class="btn number zero"  onclick="dis(0)"><p class="zero">0</p></button></td>
+        <td><button id="mybtn" class="btn decimal" onclick="dis('.')">.</button></td>
+        <td><button id="equal" class="btn operator" onclick="solve()">=</button></td>
+    </tr>
+    </table>
+    <div class="homescreen"></div>
+</div>
+</div>
+</div>
+<script src="./calc.js"></script>
+</body>
+</html>

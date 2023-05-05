@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.border{
+    min-height: 490px;
+    width: 270px;
+    background-color: black;
+    border-radius: 24px;
+    border: 5px solid black;
+    
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.calculator{
+    min-height: 500px;
+    width: 300px;
+    border-radius: 24px;
+    padding: 5%;
+}
+.screen{
+    min-height: 490px;
+    width: 260px;
+    background-color: black;
+    border-radius: 24px;
+    border: 5px solid grey;
+    color: aliceblue;
+    padding: 5%;
+}
+.homescreen{
+    height: 5px;
+    width: 95px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    margin-top:40px;
+    background-color: white;
+    border-radius: 2px;
+ }
+.value{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.value input{
+    color: white;
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    font-size: 40px;
+    margin: 0;
+    padding: 0 15px 0 0;    
+}
+table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+table tr td{
+    font-size: 20px;
+}
+.btn{
+   border-radius: 50%;
+   border-radius: none;
+   font-size: 20px;
+   width: 55px;
+   height: 55px;
+   margin: 2px;
+   color: white;
+}
+.btn.special{
+    color: white;
+    background-color: rgba(120,120,120);
+}
+.btn.special:hover{
+    color: white;
+    background-color: rgba(170,170,170);
+}
+.btn.operator{
+    background-color: rgba(252,141,12);
+}
+.btn.operator:hover{
+    background-color: rgba(255,191,62);
+}
+.btn.number, .btn.decimal{
+    background-color: rgb(38,38,38);
+}
+.btn.number:hover, .btn.decimal:hover{
+    background-color: rgb(88,88,88);
+}
+.zero{
+    border-radius: 50px;
+    width: 118px;
+}
+.zero p{
+   padding-left: 20px;
+   text-align: left;
+}
