@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.phone{
+    height: 550px;
+    width: 400px;
+    
+    display: flex;
+    justify-content: center;
+}
+.fram1{
+    height: 90.90%;
+    width: 70%;
+    background-color: aliceblue;
+    border-radius: 40px;
+    border:8px solid rgb(34, 32, 32);
+    box-shadow: 7px 7px 15px  rgb(34, 32, 32),
+                -7px -7px 15px transparent ;
+}
+.fram2{
+    height: 99.99%;
+    width: 100%%;
+    background-color: aliceblue;
+    border-radius: 30px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 2.5px solid black;
+    border-left: 2.5px solid black;
+}
+.screen{
+    height: 100%;
+    width: 100%;
+    background-image: url(./1.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    
+    z-index: 1;
+    justify-content: center;
+}
+.cem{
+    margin: auto;
+    height: 5%;
+    width: 50%;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+}
+.speaker{
+    height: 20%;
+    width: 40%;
+    background-color: rgb(63, 58, 58);
+    border-radius: 10px;
+    position: relative;
+    top: 30%;
+    left: 20%;
+}
+.cam{
+    height: 30%;
+    width: 8%;
+    background-color: rgb(63, 58, 58);
+    border-radius: 50px;
+    position: relative;
+    top: 10%;
+    left: 70%;
+  
+}
+.low{
+    margin: auto;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 81%;
+    justify-content: center;
+}
+.low i{
+    margin: 40px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    top: 10%;
+    left: 0.5%;
+}
+.b1{
+    height: 30px;
+    width: 5px;
+    background-color: rgb(34, 32, 32);
+    border-radius: 10px;
+}
+.b2{
+    margin-top: 5px;
+    height: 50px;
+    width: 5px;
+    background-color: rgb(34, 32, 32);
+    border-radius: 10px;
+}
+.b3{
+    margin-top: 6px;
+    height: 40px;
+    width: 5px;
+    background-color: rgb(34, 32, 32);
+    border-radius: 10px;
+}
+
