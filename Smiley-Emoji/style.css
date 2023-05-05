@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.emoji{
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-face{
+    width: 600px;
+    height: 600px;
+    background: #ebbd05;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.face-circle{
+    width: 590px;
+    height: 540px;
+    background: #ffda07;
+    position: absolute;
+    border-radius: 50%;
+    left: -1.1rem;
+    top: .6rem;
+    transform: rotate(-50deg);
+
+}
+.eye-1{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    top: 5%;
+    left: 25%;
+    transform: rotate(0deg);
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eye-2{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    top: 1%;
+    left: 55%;
+    transform: rotate(0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.black-c{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 50%;
+    
+}
+.white-c{
+    width: 25px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 3.5rem;
+    top: 3rem;
+    transform: rotate(200deg);
+}
+.mouth{
+    width: 410px;
+    height: 140px;
+    background: rgb(70, 70, 70);
+    position: absolute;
+
+    bottom: 15%;
+    left: -5%;
+    display: flex;
+    justify-content: center;
+    border-radius: 53% 47% 47% 53% / 13% 12% 88% 87%;
+    transform: rotate(48deg);
+    overflow: hidden;
+}
+.tooth{
+    width: 410px;
+    height: 60px;
+    background: white;
+    position: relative;
+    border-radius: 53% 47% 47% 53% / 23% 23% 77% 77%;
+}
+.blush{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+
+}
+.tounge{
+    width: 150px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    border-radius: 37% 37% 44% 56% / 31% 25% 75% 69%;
+    bottom: -4rem;
+}
