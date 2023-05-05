@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="start-game">
+        <h1 class="text-light">Select your character</h1>
+        <div class="profile">
+            <div class="img img1">
+                <img src="./image/b1.png" class="id" data-id="y">
+                <img src="./image/g1.png" class="id" data-id="x">
+            </div>
+            <div class="img">
+                <img src="./image/b2.png" class="id" data-id="y2">
+                <img src="./image/g2.png" class="id" data-id="x2">
+            </div>
+        </div>
+        <button class="primary-btn" id="startBtn">Start Game</button>
+    </div> 
+
+    <div class="container">
+        <div class="board" id="board">
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block"
+            data-cell></div>
+            <div class="block" data-cell></div>
+            
+        </div>
+    </div>
+
+   <div class="draw-msg">
+        <div class="draw">
+            <h1 class="text-center text-light">Draw</h1>
+        </div>
+        <button id="drawBtn" class="primary-btn">play Again</button>
+    </div>
+
+    <div class="winner-msg">
+        <h1 class="text-center text-light" style="margin-bottom: 30px;">Winner</h1>
+        <div class="winner"></div>
+        <button id="restartBtn" class="primary-btn">Restart</button>
+    </div>
+    <script type="module" src="./j.js"></script>
+</body>
+</html>

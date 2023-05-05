@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --text-light: #ffffff;
+    --text-dark: #000000;
+    --text-btn: #899afd;
+    --text-yellow: #f378ed;
+    --text-selected: #d7df66;
+    --cell-size: 100px;
+
+    --female-1: url(./image/g1.png);
+    --female-2: url(./image/g2.png);
+    --male-1: url(./image/b1.png);
+    --male-2: url(./image/b2.png);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: black;
+}
+.img1{
+    margin-top: 50px;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.primary-btn{
+    border: none;
+    background-color: var(--text-btn);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--text-light);
+    margin-top: 2em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.text-light{
+   color: var(--text-light);
+
+}
+.text-yellow{
+    color: var(--text-yellow);
+}
+.text-center{
+    text-align: center;
+}
+.primary-btn:hover{
+    background: var(--text-yellow);
+    color: var(--text-dark);
+}
+.start-game .profile .img img{
+    cursor: pointer;
+}
+.start-game .profile .img img:hover{
+    background-color: var(--text-yellow);
+}
+.start-game.hide{
+    display: none;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    background-color: white;
+    row-gap: 3px;
+    column-gap: 3px;
+}
+.block{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.block.x,.block.x2,
+.block.y,.block.y2{
+    cursor: not-allowed;
+}
+.block.x{
+    background: var(--female-1)var(--text-yellow)no-repeat;
+    background-color: cover;
+}
+.block.x2{
+    background: var(--female-2)var(--text-yellow)no-repeat;
+    background-color: cover;
+}
+.block.y{
+    background: var(--male-1)var(--text-btn)no-repeat;
+    background-color: cover;
+}
+.block.y2{
+    background: var(--male-2)var(--text-btn)no-repeat;
+    background-color: cover;
+}
+
+.start-game,.draw-msg,.winner-msg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(49,49,49,0.938);
+}
+.draw-msg,.winner-msg{
+    display: none;
+}
+.draw-msg.show,.winner-msg.show{
+   display: flex;
+}
+
+.start-game .profile .img > img.selected{
+    background-color: var(--text-selected);
+    border: 2px solid var(--text-light);
+    border-radius: 20px;
+}
