@@ -22,9 +22,9 @@ img{
 	perspective: 1000px;
 	transform-style: preserve-3d;
 	transform: rotateX(-10deg) rotateZ(-10deg);
-	animation: ror 20s linear infinite;
+	animation: roo 20s linear infinite;
 }
-@keyframes ror{
+@keyframes roo{
 	50%{
 		transform: rotateX(30deg);
 	}
@@ -36,9 +36,9 @@ img{
 	width: 100%;
 	position: absolute;
 	transform-style: preserve-3d;
-	animation: rotate 20s linear infinite;
+	animation: rot 20s linear infinite;
 }
-@keyframes rotate{
+@keyframes rot{
 	from{
 
 	}
