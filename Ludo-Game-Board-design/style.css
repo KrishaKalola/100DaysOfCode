@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    
+    margin: 10px auto;
+}
+.container1, 
+.container3{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  
+}
+.container2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.row1-col1,
+.row1-col3,
+.row3-col1,
+.row3-col3{
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 2px solid black;
+}
+.row1-col2,
+.row3-col2{
+    width: 21%;
+    height: 100%;
+    padding: 0;
+}
+.row2-col1,
+.row2-col3{
+    width: 40%;
+    height: 100%;
+}
+.row2-col2{
+    width: 20%;
+    height: 100%;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.white{
+    background-color: white;
+}
+.row1-col1-child,
+.row1-col3-child,
+.row3-col1-child,
+.row3-col3-child{
+   width: 70%;
+   height: 70%;
+   border: 2px solid black;
+}
+.circle{
+    width: 37%;
+    height: 37%;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.circle:hover{
+    box-shadow: -2px 14px 28px rgba(0,0,0,0.25),
+    -2px 10px 28px rgba(0,0,0,0.22);
+}
+.row1-col2 div{
+    height: 16.667%;
+    width: 33.33%;
+    border: 2px solid black;
+    float: left;
+}
+.row1-col2 div:hover{
+    background-color: silver;
+}
+.row3-col2 div{
+    height: 16.667%;
+    width: 33.33%;
+    border: 2px solid black;
+    float: left;    
+}
+.row3-col2 div:hover{
+    background-color: silver; 
+}
+.row2-col1 div{
+    height: 33.33%;
+    width: 16.667%;
+    border: 2px solid black;
+    float: left; 
+}
+.row2-col1 div:hover{
+    background-color: silver; 
+}
+.row2-col3 div{
+    height: 33.33%;
+    width: 16.667%;
+    border: 2px solid black;
+    float: left; 
+}
+.row2-col3 div:hover{
+    background-color: silver;
+}
+.icon{
+    margin: 3px;
+}
+.ludo-home{
+    height: 0;
+    width: 0;
+    float: left;
+    border-left: 60px solid red;
+    border-right: 60px solid yellow;
+    border-top: 60px solid green;
+    border-bottom: 60px solid blue;
+}
