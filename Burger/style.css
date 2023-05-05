@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.burger{
+    height: 600px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: auto;
+    flex-direction: column;
+}
+.upper-bun{
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    background-color: #bf8040;
+    clip-path: ellipse(50% 50% at 50% 108%);
+
+
+}
+.chess-1{
+    height: 120px;
+    width: 390px;
+    position: absolute;
+    top: 24.5%;
+    z-index: 5;
+    background-color: #ff9900;
+    clip-path: polygon(48% 0, 100% 13%, 82% 0, 12% 0, 24% 23%);
+}
+.chess-2{
+    height: 120px;
+    width: 310px;
+    position: absolute;
+    top: 24.5%;
+    z-index: 4;
+    background-color: #ffcc00;
+    transform-style: preserve-3d;
+    clip-path: polygon(29% 9%, 69% 27%, 100% 0, 12% 0, 0 22%);
+}
+.tikki{
+    height: 170px;
+    width: 315px;
+    position: absolute;
+    top: 16%;
+    background-color:	#603020;
+    clip-path: ellipse(50% 28% at 50% 50%);
+    transform-style: preserve-3d;
+}
+.tomatoes{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 31%;
+    z-index: 3;
+}
+.tomatoes-1{
+    height: 200px;
+    width: 40%;
+    background-color: #ff8566;
+    clip-path: ellipse(48% 10% at 52% 0%);
+    transform: rotateX(30deg)
+               rotateY(0deg);
+      
+    float: left;
+}
+.tomatoes-2{
+    height: 200px ;
+    width: 60%;
+    background-color: #ff8566;
+    clip-path: ellipse(48% 10% at 51% 0%);
+    transform-style: preserve-3d;
+    transform: rotateX(30deg)
+               rotateY(0deg);
+               float: left;
+}
+.red-skin{
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    top: 33%;
+    z-index: 2;
+}
+.skin-1{
+    height: 200px;
+    width: 40%;
+    background-color: #ff0000;
+    float: left;
+    clip-path: ellipse(58% 16% at 58% 0%);
+}
+.skin-2{
+    height: 200px ;
+    width: 60%;
+    background-color: #ff0000;
+    clip-path: ellipse(58% 16% at 42% 0%);
+    float: left; 
+}
+.green{
+    height: 50px;
+    width: 340px;
+    position: absolute;
+    top: 32%;
+    z-index: 1
+}
+.green-1{
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 12%;
+    z-index: 1;
+    background-color: green;
+    clip-path: ellipse(50% 28% at 50% 50%);
+
+}
+.green-2{
+    height: 90%;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    background-color: green;
+    clip-path: circle(33.3% at 68% 0);
+    float: left;
+}
+.green-3{
+     height: 100%;
+     width: 70%;
+     background-color: green;
+     clip-path: ellipse(52% 31% at 47% 0%);
+     float: left;
+     position: absolute;
+    top: 60%;
+    left: 28%;
+    transform: rotateY(45deg);
+}
+.green-4{
+    height: 90%;
+    width: 55%;
+    background-color: green;
+    clip-path: circle(33.3% at 32% 0);
+    position: absolute;
+    top: 60%;
+    left: 13%;
+
+}
+
+.lower-bun{
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    top: 37%;
+    background-color: #bf8040;
+    clip-path: ellipse(50% 28% at 50% 3%);
+}
+.burger:hover {
+    background-image: url();
+    
+}
+.face{
+    height: 150px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+}
+.face:hover {
+    background-image: url(./img3.png);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    top: 15%;
+    left: 41%;
+    
+}
