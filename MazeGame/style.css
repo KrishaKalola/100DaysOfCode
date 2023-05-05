@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+  }
+  body{
+    background-color: rgb(49, 46, 49);
+  }
+  
+  .maze {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #settings {
+    position: absolute;
+    padding-top: 2rem;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 60px;
+    font-size: 1rem;
+    z-index: 2;
+  }
+  p{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  input {
+    margin-bottom: 1rem;
+    background-color: #0c0a0c;
+    text-align: center;
+    height: 30px;
+    border-radius: 17px;
+    margin-top: 0.7rem;
+  }
+  
+  #submit {
+    background-color: #534f53;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0.3rem;
+  }
+  
+  #submit:hover {
+    opacity: 0.2;
+  }
+  
+  .complete {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 35%;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 5px solid rgb(240, 234, 239);
+    border-radius: 20px;
+  }
+  
+  .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fcf9fc;
+    font-family: "Bungee Inline", cursive;
+  }
+  .title2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    top: 22%;
+    color:  #ebebeb ;
+    font-family: "Bungee Inline", cursive; 
+  }
