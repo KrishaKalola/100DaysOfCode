@@ -1,0 +1,127 @@
+html {
+    background: #fff;
+    text-align: center;
+    font-size: 10px;
+  }
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    background-color: yellow;
+  }
+.clock {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 15%;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+   
+  }
+.clockI {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background:  #282828;
+    border: 5px solid white;
+    overflow: hidden;
+  }
+.clockI::after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg)
+  }
+.clockI::before,
+.clockI::after,
+.clockI .m{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background: yellow;
+    z-index: 0;
+    left: 49%;
+  }
+.clockI .m {
+    width: 2px;
+  }
+.clockI .m.m-1 {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    transform: rotate(30deg)
+  }
+.clockI .m.m-2 {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  
+  .clockI .m.m-3 {
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    transform: rotate(120deg)
+  }
+  
+  .clockI .m.m-4 {
+    -webkit-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    transform: rotate(150deg)
+  }
+  
+  .clockInside {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-image: url(./3.png);
+    background-size: cover;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    z-index: 1;
+  }
+  
+  .clockInside::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 18px;
+    margin-left: -9px;
+    margin-top: -6px;
+    background: black;
+    z-index: 11;
+  }
+  
+  .hand {
+    width: 50%;
+    right: 50%;
+    height: 8px;
+    background: #e72416;
+    position: absolute;
+    top: 50%;
+    border-radius: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  
+  .hand.sh {
+    background: #1aee72;
+    width: 45%;
+    height: 2px;
+  }
+  .hand.hh{
+    background-color: #e72416;
+    width: 40%;
+    height: 5px;
+  }
