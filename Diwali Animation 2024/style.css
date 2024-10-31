@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.light{
+    position:absolute;
+    top: 40%;
+    right: 45%;
+    width: 160px;
+    height: 80px;
+    background-color: #b11c1c;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+.light:before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    width: 160px;
+    height: 40px;
+    background-color: #fdff60;
+    border-radius: 50%;
+    border: 10px solid #9e0303;
+    box-sizing: border-box;
+}
+.light:after{
+    content: '';
+    position: absolute;
+    top: calc(-50% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 0 5px #eff000
+                0 0 0 10px rgba(255,255,255,.2);
+    filter:blur(5px);
+    animation:animate 2s liner infinte; 
+    transform-origin: bottom ;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(-50%) scaleY(1);
+    }
+    50%{
+        transform: translateX(-50%) scaleY(1.2);
+    }
+    100%{
+        transform: translateX(-50%) scaleY(1) ;
+    }
+}
+.heading{
+    font-size: 4.5rem;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 600;
+    transform: translateX(-50%) translateY(-50%);
+    line-height: 70px;
+    animation: animHeading 2s linear infinite;
+}
+
+.heading span{
+    font-size: 2rem;
+    color: rgb(0, 156, 203);
+}
+
+@keyframes animHeading {
+    0%{
+        filter: drop-shadow(0px 0px 50px rgba(13, 166, 255, 0.826)) hue-rotate(0deg);
+        
+    }
+    50%{
+        filter: drop-shadow(0px 0px 100px rgba(13, 166, 255, 0.826)) hue-rotate(120deg);
+    }
+    100%{
+        filter: drop-shadow(0px 0px 50px rgba(13, 166, 255, 0.826)) hue-rotate(0deg);
+    }
+}
